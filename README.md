@@ -17,6 +17,7 @@ Berkeleycs CS186  Introduction to Database Systems 2018
 
 [sql1](sql1.md)
 
+## Sql 2
 
-
+[sql2](sql2.md)
 
