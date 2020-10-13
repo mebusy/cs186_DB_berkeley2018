@@ -133,8 +133,75 @@ WHERE S.sid=R.sid
 
 ## Set and Multiset Semantics
 
+- Set: a collection of **distinct** elements
+- Standard ways of manipulating/combining sets
+    - Union
+    - Intersect
+    - Except
+- Treat tuples within a relation as elements of a set
+
+```sql
+R = {A, A, A, A, B, B, C, D}
+S = {A, A, B, B, B, C, E}
+
+UNION
+{A, B, C, D, E}
+
+INTERSECT
+{A, B, C}
+
+EXCEPT  // in R but not in S
+{D}
+```
+
+### “ALL”: Multiset Semantics
+
+- In multiset sementics we're going to keep track of the number of copies or the cardinality.
+
+```sql
+R = {A, A, A, A, B, B, C, D} = {A(4), B(2), C(1), D(1)}
+S = {A, A, B, B, B, C, E} = {A(2), B(3), C(1), E(1)}
+```
+
+- These notation is going to hardy for explaining things here you don't actually use this notation in practice.
 
 
+### “UNION ALL”: Multiset Semantics
 
+- SQL has these **ALL** variants of the set operators.
 
+```sql
+R = {A, A, A, A, B, B, C, D} = {A(4), B(2), C(1), D(1)}
+S = {A, A, B, B, B, C, E} = {A(2), B(3), C(1), E(1)}
 
+UNION ALL: sum of cardinalities
+
+{A(4+2), B(2+3), C(1+1), D(1+0), E(0+1)}
+= {A, A, A, A, A, A, B, B, B, B, B, C, C, D, E}
+```
+
+### “INTERSECT ALL”: Multiset Semantics
+
+```sql
+R = {A, A, A, A, B, B, C, D} = {A(4), B(2), C(1), D(1)}
+S = {A, A, B, B, B, C, E} = {A(2), B(3), C(1), E(1)}
+
+INTERSECT ALL: min of cardinalities
+
+{A(min(4,2)), B(min(2,3)), C(min(1,1)),
+D(min(1,0)), E(min(0,1))}
+= {A, A, B, B, C}
+```
+
+### “EXCEPT ALL”: Multiset Semantics
+
+```sql
+
+```
+R = {A, A, A, A, B, B, C, D} = {A(4), B(2), C(1), D(1)}
+S = {A, A, B, B, B, C, E} = {A(2), B(3), C(1), E(1)}
+
+EXCEPT ALL: difference of cardinalities
+
+{A(4-2), B(2-3), C(1-1), D(1-0), E(0-1)}
+= {A, A, D }
