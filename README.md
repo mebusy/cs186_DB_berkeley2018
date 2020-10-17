@@ -13,11 +13,10 @@ Berkeleycs CS186  Introduction to Database Systems 2018
 [sql fiddle](http://www.sqlfiddle.com/#!15)
 
 
-## Sql 1
 
-[sql1](sql1.md)
-
-## Sql 2
-
-[sql2](sql2.md)
+- [sql1 Basic](sql1.md)
+- [sql2 Join query and SET](sql2.md)
+- [sql3 Inner Outer Join](sql3.md)
+- [view](sql_view.md)
+- [nulls](sql_null.md)
 
