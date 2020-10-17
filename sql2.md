@@ -287,6 +287,24 @@ WHERE S.rating > ANY
     WHERE S2.sname='Popeye')
 ```
 
+### A Tough One: “Division”
+
+- It is called "Division" for historical reasons
+- Relational Division: “Find sailors who’ve reserved all boats.”
+    - Said differently: “sailors with no counterexample of a boat they haven't reserved”
+
+```sql
+SELECT S.sname
+FROM Sailors S
+WHERE NOT EXISTS
+    (SELECT B.bid   -- all missing boats
+    FROM Boats B
+    WHERE NOT EXISTS (SELECT R.bid
+        FROM Reserves R
+        WHERE R.bid=B.bid
+        AND R.sid=S.sid ))
+```
+
 
 
 
