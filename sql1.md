@@ -1,6 +1,32 @@
 
 # Sql 1
 
+## PRIMARY and FOREIGN KEY
+
+```sql
+CREATE TABLE Sailors ( 
+    sid INTEGER,
+    sname CHAR(20), 
+    rating INTEGER,
+    age FLOAT,
+    PRIMARY KEY (sid)
+);
+CREATE TABLE Boats ( 
+    bid INTEGER,
+    bname CHAR (20), 
+    color CHAR(10),
+    PRIMARY KEY (bid)
+);
+CREATE TABLE Reserves ( 
+    sid INTEGER, 
+    bid INTEGER,
+    day DATE,
+    PRIMARY KEY (sid, bid, day), 
+    FOREIGN KEY (sid) REFERENCES Sailors,
+    FOREIGN KEY (bid) REFERENCES Boats
+);
+```
+
 ## Basic Single-Table Queries
 
 ```sql

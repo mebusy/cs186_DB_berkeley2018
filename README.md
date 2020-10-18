@@ -13,10 +13,12 @@ Berkeleycs CS186  Introduction to Database Systems 2018
 [sql fiddle](http://www.sqlfiddle.com/#!15)
 
 
+Note: using google doc to open lecture slides
 
 - [sql1 Basic](sql1.md)
 - [sql2 Join query and SET](sql2.md)
-- [sql3 Inner Outer Join](sql3.md)
-- [view](sql_view.md)
-- [nulls](sql_null.md)
+- [sql3 Inner/Outer Join](sql3.md)
+- [VIEWs](sql_view.md)
+- [NULLs](sql_null.md)
+
 
