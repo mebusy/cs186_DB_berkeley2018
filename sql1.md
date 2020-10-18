@@ -122,6 +122,31 @@ GROUP BY S.dept
     - Cardinality of output = # of distinct group values
 - **Note: only grouping columns or aggregated values can appear in the SELECT list**
 
+- example: finding total number of albums released for each genre
+    ```sql
+     SELECT count(genre), genre
+    FROM albums
+    GROUP BY GENRE;    
+    ```
+- how to achieve the same goal without using `GROUP by`
+    - since `count` is aggregate function, we can not directly use `genre` in SELECT list any more
+    - solution:
+    ```sql
+      SELECT count(genre), 'pop' as genre
+    from albums
+    where genre = 'pop'
+
+    UNION
+
+      SELECT count(genre), 'country' as genre
+    from albums
+    where genre = 'country'
+
+    UNION
+
+    ...
+    ```
+- Note: with `GROUP BY` you can also use aggregate function in `ORDER` clause.
 
 ### HAVING
 
