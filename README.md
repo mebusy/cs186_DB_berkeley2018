@@ -20,5 +20,5 @@ Note: using google doc to open lecture slides
 - [sql3 Inner/Outer Join](sql3.md)
 - [VIEWs](sql_view.md)
 - [NULLs](sql_null.md)
-
+- [Disk](sql_disk.md)
 
