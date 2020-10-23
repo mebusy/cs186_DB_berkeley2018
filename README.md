@@ -20,5 +20,6 @@ Note: using google doc to open lecture slides
 - [sql3 Inner/Outer Join](sql3.md)
 - [VIEWs](sql_view.md)
 - [NULLs](sql_null.md)
-- [Disk](sql_disk.md)
+- [Disks, Buffers and Files: Records](sql_disk.md)
+- [Disks, Buffers and FilesII : File Organizations](sql_file_org.md)
 
