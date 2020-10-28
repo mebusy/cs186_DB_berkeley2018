@@ -15,11 +15,14 @@ Berkeleycs CS186  Introduction to Database Systems 2018
 
 Note: using google doc to open lecture slides
 
-- [sql1 Basic](sql1.md)
-- [sql2 Join query and SET](sql2.md)
+- [sql1 Basic](sql1.md) , [pdf](slides/02_sql1.pdf)
+- [sql2 Join query and SET](sql2.md) , [pdf](slides/03_sql2.pdf)
 - [sql3 Inner/Outer Join](sql3.md)
 - [VIEWs](sql_view.md)
 - [NULLs](sql_null.md)
-- [Disks, Buffers and Files: Records](sql_disk.md)
-- [Disks, Buffers and FilesII : File Organizations](sql_file_org.md)
+- [Disks, Buffers and Files: Records](sql_disk.md) , [pdf](slides/04_disk_file.pdf),  [pdf2](slides/045_disk2.pdf)
+- [Disks, Buffers and FilesII : File Organizations](sql_file_org.md) , [pdf](slides/05_cost-models-indexes.pdf)
+- [b-tree, index](slides/05b-tree-indexes.pdf)
+
+
 
