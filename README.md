@@ -22,7 +22,7 @@ Note: using google doc to open lecture slides
 - [NULLs](sql_null.md)
 - [Disks, Buffers and Files: Records](sql_disk.md) , [pdf](slides/04_disk_file.pdf),  [pdf2](slides/045_disk2.pdf)
 - [Disks, Buffers and FilesII : File Organizations](sql_file_org.md) , [pdf](slides/05_cost-models-indexes.pdf)
-- [b-tree, index](slides/05b-tree-indexes.pdf)
+- [b-tree, index pdf](slides/05b-tree-indexes.pdf), [ISAM note](isam.md)
 
 
 
