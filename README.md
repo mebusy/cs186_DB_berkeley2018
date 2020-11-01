@@ -13,6 +13,8 @@ Berkeleycs CS186  Introduction to Database Systems 2018
 [sql fiddle](http://www.sqlfiddle.com/#!15)
 
 
+[visualize B+ tree](https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html)
+
 Note: using google doc to open lecture slides
 
 - [sql1 Basic](sql1.md) , [pdf](slides/02_sql1.pdf)
@@ -22,7 +24,7 @@ Note: using google doc to open lecture slides
 - [NULLs](sql_null.md)
 - [Disks, Buffers and Files: Records](sql_disk.md) , [pdf](slides/04_disk_file.pdf),  [pdf2](slides/045_disk2.pdf)
 - [Disks, Buffers and FilesII : File Organizations](sql_file_org.md) , [pdf](slides/05_cost-models-indexes.pdf)
-- [b-tree, index pdf](slides/05b-tree-indexes.pdf), [ISAM note](isam.md)
-
-
+- [b-tree, index pdf](slides/05b-tree-indexes.pdf), [ISAM/B+ note](isam.md)
+- [tree index extension](slides/6a-tree-index-extensions.pdf)
+- [tree cost](slides/6b-tree-costs.pdf)
 

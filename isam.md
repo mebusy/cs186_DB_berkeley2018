@@ -52,7 +52,7 @@
 - Distinguish: **Dynamic Tree Index**
     - Always Balanced
     - Support efficient insertion & deletion
-        - Grows at root not leaves!
+        - Grows at root not leaves! ( so as to guarantee tree is balanced )
 - "B+", where is the `+` from ? 
     - The original B tree has data stored at interior nodes,  B+ tree stores all data at the leaves, this is useful for range search.
 
