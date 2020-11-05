@@ -27,4 +27,9 @@ Note: using google doc to open lecture slides
 - [b-tree, index pdf](slides/05b-tree-indexes.pdf), [ISAM/B+ note](isam.md)
 - [tree index extension](slides/6a-tree-index-extensions.pdf)
 - [tree cost](slides/6b-tree-costs.pdf)
+- [Refinements On Index](RefinementsOnIndex.md)
+
+
+
+
 
