@@ -34,6 +34,10 @@
 
 [tree-index-extensions](slides/6a-tree-index-extensions.pdf)
 
+## Alternative 2 vs Alternative 3  Table Illustration
+
+![](imgs/cs186_alt2_vs_alt3.png)
+
 
 
 
