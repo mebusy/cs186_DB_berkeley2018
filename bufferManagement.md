@@ -52,3 +52,27 @@
     - serveral pages at a time, and each of them is gonna replace a previous page following the rules.
 
 
+## After Requestor Finishes
+
+1. Requestor of page must:
+    - set dirty bit if page was modified
+    - unpin the page( preferably soon!)
+        - Note: it is requestor's duty to unpin it, not buffer manager
+2. Page in pool may be requested many times
+    - a pin count is used
+    - to pin a page: pin_count++
+    - A page is a candidate for replacement iff
+        - pin_count == 0 ("unpinned")
+
+3. CC & recovery may do additional I/Os upon replacement
+    - Write Ahead Log protocol; more later!
+
+
+## Page Replacement Policies
+
+- Twopolicieswewilldiscuss:
+    - Least-recently-used (LRU), Clock
+        - page 18
+    - Most-recently-used (MRU)
+- Policycanhavebigimpacton#I/Os
+    - Depends on the access pattern.
