@@ -175,7 +175,7 @@ SELECT [DISTINCT] <column expression list>
 FROM <single table>
 [WHERE <predicate>]
 [GROUP BY <column list>
-[HAVING <predicate>] ]
+    [HAVING <predicate>] ]
 [ORDER BY <column list>]
 [LIMIT <integer>];
 ```
