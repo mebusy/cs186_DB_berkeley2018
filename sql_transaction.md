@@ -20,5 +20,6 @@
     1. are by different transactions
     2. are on the same object
     3. at least one of them is a write
+- Conflict Dependency Graph (see pdf notes)
 
 
